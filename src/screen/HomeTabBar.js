@@ -6,7 +6,7 @@ import CommonHeader from '../common/Header'
 
 export default class HomeTabBar extends Component {
     static navigationOptions = {
-        headerTitle: "Home",
+        headerTitle: "Tab bar Home",
       };
 
     render() {
