@@ -55,7 +55,9 @@ const AppContainer = createAppContainer(appDrawer);
 export default class Navigation extends React.Component{
     render(){
         return(
-            <AppContainer/>
+             <AppContainer/>
+        //     <View style = {{flex: 1 , backgroundColor: "red"}}>
+        //    </View>
         )
     }
 }

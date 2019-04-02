@@ -8,7 +8,7 @@
 
 import React, { Component } from 'react';
 import { View, } from 'react-native'
-import { createBottomTabNavigator, createAppContainer, TabNavigator , createMaterialTopTabNavigator} from 'react-navigation'; 
+import { createBottomTabNavigator, createAppContainer, TabNavigator , createMaterialTopTabNavigator, createStackNavigator} from 'react-navigation'; 
 import HomeTabBar from './src/screen/HomeTabBar';
 import Notification from './src/screen/Notification';
 import Profile from './src/screen/Profile';
@@ -29,7 +29,25 @@ const Tab = createMaterialTopTabNavigator({
   },
   Setting: {
     screen: Setting
-  },
+  },    
+}, {
+  tabBarOptions: {
+    activeTintColor: '#000',
+    inactiveTintColor: 'gray',
+    style: {
+        backgroundColor: '#fff',
+    },
+    indicatorStyle: {
+        backgroundColor: '#000',
+    },
+}
+
+
 })
 
-export default createAppContainer(Tab);
+export default App = () => {
+  return createStackNavigator ({
+    Tab: { screen: Tab }
+  }
+  )
+}
